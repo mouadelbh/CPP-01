@@ -6,14 +6,14 @@
 #    By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/14 00:09:31 by mel-bouh          #+#    #+#              #
-#    Updated: 2024/12/14 00:10:23 by mel-bouh         ###   ########.fr        #
+#    Updated: 2024/12/15 05:59:06 by mel-bouh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = main.cpp Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 NAME = Harl
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 

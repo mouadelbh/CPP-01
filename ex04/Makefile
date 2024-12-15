@@ -6,14 +6,14 @@
 #    By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/13 01:18:27 by mel-bouh          #+#    #+#              #
-#    Updated: 2024/12/13 01:19:21 by mel-bouh         ###   ########.fr        #
+#    Updated: 2024/12/15 05:59:10 by mel-bouh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = main.cpp Sed.cpp
 OBJ = $(SRC:.cpp=.o)
 NAME = replace
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 

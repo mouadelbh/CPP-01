@@ -6,11 +6,11 @@
 #    By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/10 05:44:03 by mel-bouh          #+#    #+#              #
-#    Updated: 2024/12/10 06:57:15 by mel-bouh         ###   ########.fr        #
+#    Updated: 2024/12/15 05:59:32 by mel-bouh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Flags = -Wall -Wextra -Werror
+Flags = -Wall -Wextra -Werror -std=c++98
 NAME = zombie
 SRC = main.cpp zombieHorde.cpp Zombie.cpp
 OBJ = $(SRC:.cpp=.o)
