@@ -6,7 +6,7 @@
 /*   By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 05:17:56 by mel-bouh          #+#    #+#             */
-/*   Updated: 2024/12/10 05:49:20 by mel-bouh         ###   ########.fr       */
+/*   Updated: 2025/02/05 16:42:43 by mel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 int main()
 {
-	Zombie *zombie = newZombie("Foo");
+	Zombie	zombozo("zombozo");
+	Zombie	*zombie = newZombie("Foo");
 	zombie->announce();
+	zombozo.announce();
+	randomChump("Chump");
 	delete zombie;
-	randomChump();
 	return 0;
 }

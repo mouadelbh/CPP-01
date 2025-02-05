@@ -6,7 +6,7 @@
 /*   By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 23:49:25 by mel-bouh          #+#    #+#             */
-/*   Updated: 2024/12/14 00:11:05 by mel-bouh         ###   ########.fr       */
+/*   Updated: 2025/02/05 17:39:19 by mel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,5 @@ class Harl
 	public:
 		void	complain(std::string level);
 };
-
-typedef void (Harl::*t_lvls)();
 
 #endif

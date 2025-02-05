@@ -6,7 +6,7 @@
 /*   By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 04:32:47 by mel-bouh          #+#    #+#             */
-/*   Updated: 2024/12/13 01:36:42 by mel-bouh         ###   ########.fr       */
+/*   Updated: 2025/02/05 17:22:08 by mel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ int main(int ac, char **av)
 		return (print_error("This program takes 3 arguments"));
 	file_name = std::string(av[1]);
 	newfile_name = file_name + ".replace";
-	std::ifstream	file(file_name);
+	std::ifstream	file(file_name.c_str());
 	if (!file)
 		return (print_error("Error opening " + file_name));
-	std::ofstream	newfile(newfile_name);
+	std::ofstream	newfile(newfile_name.c_str());
 	if (!newfile)
 		return (print_error("Error opening " + newfile_name));
 	while (std::getline(file, line))

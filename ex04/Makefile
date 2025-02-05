@@ -6,20 +6,21 @@
 #    By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/13 01:18:27 by mel-bouh          #+#    #+#              #
-#    Updated: 2024/12/15 05:59:10 by mel-bouh         ###   ########.fr        #
+#    Updated: 2025/02/05 17:45:10 by mel-bouh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = main.cpp Sed.cpp
 OBJ = $(SRC:.cpp=.o)
 NAME = replace
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -Wall -Wextra -Werror #-std=c++98
+HEADER = Sed.hpp
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	c++ $(FLAGS) $(OBJ) -o $(NAME)
-$(OBJ): $(SRC)
+$(OBJ): $(SRC) $(HEADER)
 	c++ $(FLAGS) -c $(SRC)
 
 clean:
